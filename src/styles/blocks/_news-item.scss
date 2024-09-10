@@ -42,6 +42,21 @@
     letter-spacing: 0.31em;
     color: #00001a;
     background-color: #f15d51;
+    cursor: pointer;
+  }
+
+  @media (hover: hover) {
+    &__link:hover {
+      background-color: #00001a;
+      color: #fffdfa;
+    }
+  }
+
+  @media (hover: none) {
+    &__link:hover {
+      background-color: #00001a;
+      color: #fffdfa;
+    }
   }
 
   @include t.breakpoint(m) {

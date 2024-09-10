@@ -6,4 +6,24 @@
     grid-auto-flow: column;
     gap: 40px;
   }
+
+  &__link {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.73;
+    color: #5e607a;
+    cursor: pointer;
+  }
+
+  @media (hover: hover) {
+    &__link:hover {
+      color: #f15d51;
+    }
+  }
+
+  @media (hover: none) {
+    &__link:active {
+      color: #f15d51;
+    }
+  }
 }

@@ -1,9 +1,13 @@
-@use '../tools/' as t;
+@use "../tools/" as t;
 
 .l-header {
-    display: grid;
-    grid-template-columns: 45px auto;
-    grid-template-rows: 28px;
-    align-items: center;
-    justify-content: space-between;
+  display: grid;
+  grid-template-columns: 45px auto;
+  grid-template-rows: 28px;
+  align-items: center;
+  justify-content: space-between;
+
+  @include t.breakpoint(m) {
+    grid-template-rows: 40px;
+  }
 }

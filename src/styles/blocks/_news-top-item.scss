@@ -25,9 +25,22 @@
 
   &__headline {
     grid-area: headline;
+    cursor: pointer;
   }
 
   &__announce {
     grid-area: announce;
+  }
+
+  @media (hover: hover) {
+    &__headline:hover {
+      color: #f15d51;
+    }
+  }
+
+  @media (hover: none) {
+    &__headline:active {
+      color: #f15d51;
+    }
   }
 }

@@ -9,6 +9,7 @@
 
   &__headline {
     color: var(--headline-color);
+    cursor: pointer;
   }
 
   &__announce {
@@ -18,5 +19,17 @@
   &--theme-light {
     --headline-color: #fffdfa;
     --announce-color: #c5c6ce;
+  }
+
+  @media (hover: hover) {
+    &--theme-light &__headline:hover {
+      color: #e9aa52;
+    }
+  }
+
+  @media (hover: none) {
+    &--theme-light &__headline:active {
+      color: #e9aa52;
+    }
   }
 }
