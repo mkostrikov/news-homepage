@@ -1,0 +1,33 @@
+@use "../tools/" as t;
+
+.b-news-top-item {
+  display: grid;
+  grid-template-areas:
+    "img number"
+    "img headline"
+    "img announce";
+  justify-content: start;
+  gap: 0 24px;
+
+  &::before {
+    grid-area: number;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1;
+    color: #f15d51;
+  }
+
+  &__img {
+    grid-area: img;
+    inline-size: 100px;
+    block-size: auto;
+  }
+
+  &__headline {
+    grid-area: headline;
+  }
+
+  &__announce {
+    grid-area: announce;
+  }
+}

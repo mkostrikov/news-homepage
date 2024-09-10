@@ -1,0 +1,9 @@
+@use "../tools/" as t;
+
+.b-nav {
+  &__list {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 40px;
+  }
+}

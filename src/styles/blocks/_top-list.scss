@@ -1,0 +1,21 @@
+@use "../tools/" as t;
+
+.b-top-list {
+  counter-reset: top 0;
+  display: grid;
+  gap: 32px;
+
+  li {
+    counter-increment: top 1;
+    display: grid;
+  }
+
+  & > li > *::before {
+    content: counter(top, decimal-leading-zero);
+  }
+
+  @include t.breakpoint(m) {
+    grid-template-columns: repeat(3, 350px);
+    gap: 30px;
+  }
+}

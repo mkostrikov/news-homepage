@@ -1,0 +1,9 @@
+@use '../tools/' as t;
+
+.l-header {
+    display: grid;
+    grid-template-columns: 45px auto;
+    grid-template-rows: 28px;
+    align-items: center;
+    justify-content: space-between;
+}
