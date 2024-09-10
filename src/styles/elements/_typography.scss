@@ -10,6 +10,16 @@ h2 {
   line-height: 1;
 }
 
+h3 {
+  font-size: clamp(
+    t.rem(32),
+    1.823943661971831rem + 0.7511737089201878vw,
+    t.rem(40)
+  );
+  font-weight: 700;
+  line-height: 1;
+}
+
 p {
   max-inline-size: 80ch;
   font-weight: 400;

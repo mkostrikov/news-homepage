@@ -11,31 +11,71 @@
 
     <link rel="stylesheet" href="/src/styles/main.scss" />
   </head>
-  <body>
-    <article class="b-news-item">
-      <picture class="b-news-item__picture">
-        <source
-          media="(min-width: 686px)"
-          srcset="/src/assets/images/image-web-3-desktop.webp"
-          width="1460"
-          height="600"
-        />
-        <img
-          src="/src/assets/images/image-web-3-mobile.webp"
-          alt=""
-          width="686"
-          height="600"
-          fetchpriority="high"
-        />
-      </picture>
+  <body class="l-homepage">
+    <main class="l-main">
+      <article class="b-news-item">
+        <picture class="b-news-item__picture">
+          <source
+            media="(min-width: 686px)"
+            srcset="/src/assets/images/image-web-3-desktop.webp"
+            width="1460"
+            height="600"
+          />
+          <img
+            src="/src/assets/images/image-web-3-mobile.webp"
+            alt=""
+            width="686"
+            height="600"
+            fetchpriority="high"
+          />
+        </picture>
 
-      <h2 class="b-news-item__headline">The Bright Future of Web 3.0?</h2>
-      <p class="b-news-item__announce">
-        We dive into the next evolution of the web that claims to put the power
-        of the platforms back into the hands of the people. But is it really
-        fulfilling its promise?
-      </p>
-      <a href="#" class="b-news-item__link">read more</a>
-    </article>
+        <h2 class="b-news-item__headline">The Bright Future of Web 3.0?</h2>
+        <p class="b-news-item__announce">
+          We dive into the next evolution of the web that claims to put the
+          power of the platforms back into the hands of the people. But is it
+          really fulfilling its promise?
+        </p>
+        <a href="#" class="b-news-item__link">read more</a>
+      </article>
+
+      <section class="l-section l-section--theme-dark-space-blue">
+        <h3 class="l-section__headline">New</h3>
+        <ul
+          class="b-list-with-divide b-list-with-divide--theme-dark-space-blue"
+        >
+          <li>
+            <article class="b-news-short b-news-short--theme-light">
+              <h4 class="b-news-short__headline">Hydrogen VS Electric Cars</h4>
+              <p class="b-news-short__announce">
+                Will hydrogen-fueled cars ever catch up to EVs?
+              </p>
+            </article>
+          </li>
+
+          <li>
+            <article class="b-news-short b-news-short--theme-light">
+              <h4 class="b-news-short__headline">
+                The Downsides of AI Artistry
+              </h4>
+              <p class="b-news-short__announce">
+                What are the possible adverse effects of on-demand AI image
+                generation?
+              </p>
+            </article>
+          </li>
+
+          <li>
+            <article class="b-news-short b-news-short--theme-light">
+              <h4 class="b-news-short__headline">Is VC Funding Drying Up?</h4>
+              <p class="b-news-short__announce">
+                Private funding by VC firms is down 50% YOY. We take a look at
+                what that means.
+              </p>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>

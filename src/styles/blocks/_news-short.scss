@@ -1,0 +1,22 @@
+@use "../tools/" as t;
+
+.b-news-short {
+  --headline-color: #000;
+  --announce-color: rgba(0, 0, 0, 0.8);
+
+  display: grid;
+  gap: 8px;
+
+  &__headline {
+    color: var(--headline-color);
+  }
+
+  &__announce {
+    color: var(--announce-color);
+  }
+
+  &--theme-light {
+    --headline-color: #fffdfa;
+    --announce-color: #c5c6ce;
+  }
+}

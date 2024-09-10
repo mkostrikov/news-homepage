@@ -11,6 +11,7 @@
     "..."
     "link";
   grid-template-rows: auto 24px auto 16px auto 24px auto;
+  align-items: start;
   text-wrap: balance;
 
   &__picture {
@@ -39,9 +40,8 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.31em;
-    color: var(--dark-space-blue);
-    // background: var(--light-vermillion);
-    background-color: orange;
+    color: #00001a;
+    background-color: #f15d51;
   }
 
   @include t.breakpoint(m) {

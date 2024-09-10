@@ -1,0 +1,29 @@
+@use "../tools/" as t;
+
+.b-list-with-divide {
+    --bg-color: #000;
+    --item-bg-color: #fff;
+
+    background-color: var(--bg-color);
+    display: grid;
+    gap: 1px;
+
+    & > li {
+        background-color: var(--item-bg-color);
+        padding-block: 30px;
+    }
+
+    & > li:first-child {
+        padding-block: 0 30px;
+    }
+
+    & > li:last-child {
+        padding-block: 30px 0;
+    }
+    
+    &--theme-dark-space-blue {
+        --bg-color: #5e607a;
+        --item-bg-color: #00001a;
+    }
+
+}

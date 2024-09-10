@@ -1,0 +1,11 @@
+@use "../tools/" as t;
+
+.l-main {
+  display: grid;
+  gap: 64px;
+
+  @include t.breakpoint(m) {
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 30px;
+  }
+}

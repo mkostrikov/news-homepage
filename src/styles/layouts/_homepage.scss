@@ -1,0 +1,13 @@
+@use "../tools/" as t;
+
+.l-homepage {
+  max-inline-size: 1110px;
+  margin-inline: auto;
+  padding: 28px 16px;
+
+  @include t.breakpoint(m) {
+    & {
+      padding: 90px 16px;
+    }
+  }
+}
