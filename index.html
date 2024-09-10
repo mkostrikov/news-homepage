@@ -11,5 +11,31 @@
 
     <link rel="stylesheet" href="/src/styles/main.scss" />
   </head>
-  <body></body>
+  <body>
+    <article class="b-news-item">
+      <picture class="b-news-item__picture">
+        <source
+          media="(min-width: 686px)"
+          srcset="/src/assets/images/image-web-3-desktop.webp"
+          width="1460"
+          height="600"
+        />
+        <img
+          src="/src/assets/images/image-web-3-mobile.webp"
+          alt=""
+          width="686"
+          height="600"
+          fetchpriority="high"
+        />
+      </picture>
+
+      <h2 class="b-news-item__headline">The Bright Future of Web 3.0?</h2>
+      <p class="b-news-item__announce">
+        We dive into the next evolution of the web that claims to put the power
+        of the platforms back into the hands of the people. But is it really
+        fulfilling its promise?
+      </p>
+      <a href="#" class="b-news-item__link">read more</a>
+    </article>
+  </body>
 </html>

@@ -1,2 +1,18 @@
 @use "../tools/" as t;
 
+h2 {
+  font-size: clamp(
+    t.rem(40),
+    2.147887323943662rem + 1.5023474178403755vw,
+    t.rem(56)
+  );
+  font-weight: 800;
+  line-height: 1;
+}
+
+p {
+  max-inline-size: 80ch;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.73;
+}

@@ -1,0 +1,56 @@
+@use "../tools/" as t;
+
+.b-news-item {
+  display: grid;
+  grid-template-areas:
+    "picture"
+    "..."
+    "headline"
+    "..."
+    "announce"
+    "..."
+    "link";
+  grid-template-rows: auto 24px auto 16px auto 24px auto;
+  text-wrap: balance;
+
+  &__picture {
+    grid-area: picture;
+  }
+
+  &__picture > img {
+    inline-size: 100%;
+    block-size: auto;
+  }
+
+  &__headline {
+    grid-area: headline;
+  }
+
+  &__announce {
+    grid-area: announce;
+  }
+
+  &__link {
+    grid-area: link;
+    justify-self: start;
+    padding: 12px 32px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.31em;
+    color: var(--dark-space-blue);
+    // background: var(--light-vermillion);
+    background-color: orange;
+  }
+
+  @include t.breakpoint(m) {
+    grid-template-areas:
+      "picture picture"
+      "headline announce"
+      "headline link";
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: repeat(3, auto);
+    gap: 30px;
+  }
+}
