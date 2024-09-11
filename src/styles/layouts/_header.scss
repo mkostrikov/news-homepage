@@ -23,6 +23,11 @@
     );
   }
 
+  &__menu:focus-visible {
+    outline: 2px solid #00001a;
+    outline-offset: 4px;
+  }
+
   @include t.breakpoint(s) {
     &__nav {
       display: block;

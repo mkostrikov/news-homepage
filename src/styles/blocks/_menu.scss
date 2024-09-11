@@ -29,6 +29,11 @@
     background-color: #fff;
   }
 
+  & > header > button:focus-visible {
+    outline: 2px solid #5e607a;
+    outline-offset: 4px;
+  }
+
   @keyframes open {
     0% {
       grid-template-columns: 0px;

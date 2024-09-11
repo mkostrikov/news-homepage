@@ -7,13 +7,17 @@
   display: grid;
   gap: 8px;
 
-  &__headline {
+  &__headline > a {
     color: var(--headline-color);
-    cursor: pointer;
   }
 
   &__announce {
     color: var(--announce-color);
+  }
+
+  &__headline > a:focus-visible {
+    outline: 2px solid #e9aa52;
+    outline-offset: 4px;
   }
 
   &--theme-light {
@@ -22,13 +26,13 @@
   }
 
   @media (hover: hover) {
-    &--theme-light &__headline:hover {
+    &--theme-light &__headline > a:hover {
       color: #e9aa52;
     }
   }
 
   @media (hover: none) {
-    &--theme-light &__headline:active {
+    &--theme-light &__headline > a:active {
       color: #e9aa52;
     }
   }
