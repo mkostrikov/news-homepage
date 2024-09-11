@@ -1,21 +1,13 @@
 @use "../tools/" as t;
 
 .l-section {
-  --headline-color: #000;
-  --bg-color: #fff;
-
-  background-color: var(--bg-color);
+  background-color: #00001a;
   padding: 24px 20px;
   display: grid;
   gap: 35px;
 
   &__headline {
-    color: var(--headline-color);
-  }
-
-  &--theme-dark-space-blue {
-    --headline-color: #e9aa52;
-    --bg-color: #00001a;
+    color: #e9aa52;
   }
 
   @include t.breakpoint(m) {

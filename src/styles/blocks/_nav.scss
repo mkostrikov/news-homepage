@@ -15,6 +15,19 @@
     cursor: pointer;
   }
 
+  &--menu &__list {
+    grid-auto-flow: row;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  &--menu &__link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33;
+    color: #00001a;
+  }
+
   @media (hover: hover) {
     &__link:hover {
       color: #f15d51;

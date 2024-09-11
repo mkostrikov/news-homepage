@@ -1,6 +1,6 @@
 @use "../tools/" as t;
 
-.b-top-list {
+.b-numeric-list {
   counter-reset: top 0;
   display: grid;
   gap: 32px;

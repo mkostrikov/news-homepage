@@ -10,6 +10,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon-32x32.png" />
 
     <link rel="stylesheet" href="/src/styles/main.scss" />
+    <script defer type="module" src="/src/assets/scripts/main.js"></script>
   </head>
   <body class="l-homepage">
     <header class="l-header">
@@ -22,7 +23,7 @@
         />
       </svg>
 
-      <nav class="b-nav">
+      <nav class="l-header__nav b-nav">
         <ul class="b-nav__list">
           <li class="b-nav__item">
             <a href="#" class="b-nav__link">Home</a>
@@ -41,6 +42,12 @@
           </li>
         </ul>
       </nav>
+
+      <button
+        class="l-header__menu"
+        id="open-menu"
+        aria-label="open menu"
+      ></button>
     </header>
 
     <main class="l-main">
@@ -70,11 +77,9 @@
         <a href="#" class="b-news-item__link">read more</a>
       </article>
 
-      <section class="l-section l-section--theme-dark-space-blue">
+      <section class="l-section">
         <h3 class="l-section__headline">New</h3>
-        <ul
-          class="b-list-with-divide b-list-with-divide--theme-dark-space-blue"
-        >
+        <ul class="b-list-with-divide">
           <li>
             <article class="b-news-short b-news-short--theme-light">
               <h4 class="b-news-short__headline">Hydrogen VS Electric Cars</h4>
@@ -110,7 +115,7 @@
     </main>
 
     <aside>
-      <ol class="b-top-list">
+      <ol class="b-numeric-list">
         <li>
           <article class="b-news-top-item">
             <img
@@ -160,5 +165,31 @@
         </li>
       </ol>
     </aside>
+
+    <dialog aria-label="Menu" id="menu" class="b-menu">
+      <header>
+        <button aria-label="close menu" id="close-menu"></button>
+
+        <nav class="b-nav b-nav--menu">
+          <ul class="b-nav__list">
+            <li class="b-nav__item">
+              <a href="#" class="b-nav__link">Home</a>
+            </li>
+            <li class="b-nav__item">
+              <a href="#" class="b-nav__link">New</a>
+            </li>
+            <li class="b-nav__item">
+              <a href="#" class="b-nav__link">Popular</a>
+            </li>
+            <li class="b-nav__item">
+              <a href="#" class="b-nav__link">Trending</a>
+            </li>
+            <li class="b-nav__item">
+              <a href="#" class="b-nav__link">Categories</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </dialog>
   </body>
 </html>
