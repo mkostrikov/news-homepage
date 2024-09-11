@@ -14,6 +14,12 @@
     content: counter(top, decimal-leading-zero);
   }
 
+  @include t.breakpoint(s) {
+    & {
+      align-content: space-between;
+    }
+  }
+
   @include t.breakpoint(m) {
     grid-template-columns: repeat(3, 350px);
     gap: 30px;

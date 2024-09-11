@@ -2,10 +2,41 @@
 
 .l-main {
   display: grid;
+  grid-template-areas:
+    "article"
+    "new"
+    "top";
   gap: 64px;
 
+  &__article {
+    grid-area: article;
+  }
+
+  &__new {
+    grid-area: new;
+  }
+
+  &__top {
+    grid-area: top;
+  }
+
+  @include t.breakpoint(s) {
+    & {
+      grid-template-areas:
+        "article article"
+        "new top";
+      grid-template-columns: repeat(2, minmax(350px, 1fr));
+      gap: 64px 30px;
+    }
+  }
+
   @include t.breakpoint(m) {
-    grid-template-columns: auto minmax(0, 1fr);
-    gap: 30px;
+    & {
+      grid-template-areas:
+        "article article new"
+        "top top top";
+      grid-template-columns: repeat(3, 350px);
+      gap: 64px 30px;
+    }
   }
 }

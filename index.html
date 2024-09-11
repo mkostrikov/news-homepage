@@ -14,7 +14,10 @@
   </head>
   <body class="l-homepage">
     <header class="l-header">
+      <h1>News homepage</h1>
+
       <svg viewBox="0 0 65 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <title>Logo</title>
         <path
           fill-rule="evenodd"
           clip-rule="evenodd"
@@ -51,7 +54,7 @@
     </header>
 
     <main class="l-main">
-      <article class="b-news-item">
+      <article class="l-main__article b-news-item">
         <picture class="b-news-item__picture">
           <source
             media="(min-width: 686px)"
@@ -77,7 +80,7 @@
         <a href="#" class="b-news-item__link">read more</a>
       </article>
 
-      <section class="l-section">
+      <section class="l-main__new l-section l-section--theme-gold-black">
         <h3 class="l-section__headline">New</h3>
         <ul class="b-list-with-divide">
           <li>
@@ -112,59 +115,60 @@
           </li>
         </ul>
       </section>
+
+      <section class="l-main__top l-section l-section--headline-hidden">
+        <h3 class="l-section__headline">Top</h3>
+        <ol class="b-numeric-list">
+          <li>
+            <article class="b-news-top-item">
+              <img
+                class="b-news-top-item__img"
+                src="/src/assets/images/image-retro-pcs.webp"
+                alt=""
+                width="200"
+                height="254"
+              />
+              <h4 class="b-news-top-item__headline">Reviving Retro PCs</h4>
+              <p class="b-news-top-item__announce">
+                What happens when old PCs are given modern upgrades?
+              </p>
+            </article>
+          </li>
+
+          <li>
+            <article class="b-news-top-item">
+              <img
+                class="b-news-top-item__img"
+                src="/src/assets/images/image-top-laptops.webp"
+                alt=""
+                width="200"
+                height="254"
+              />
+              <h4 class="b-news-top-item__headline">Top 10 Laptops of 2022</h4>
+              <p class="b-news-top-item__announce">
+                Our best picks for various needs and budgets.
+              </p>
+            </article>
+          </li>
+
+          <li>
+            <article class="b-news-top-item">
+              <img
+                class="b-news-top-item__img"
+                src="/src/assets/images/image-gaming-growth.webp"
+                alt=""
+                width="200"
+                height="254"
+              />
+              <h4 class="b-news-top-item__headline">The Growth of Gaming</h4>
+              <p class="b-news-top-item__announce">
+                How the pandemic has sparked fresh opportunities.
+              </p>
+            </article>
+          </li>
+        </ol>
+      </section>
     </main>
-
-    <aside>
-      <ol class="b-numeric-list">
-        <li>
-          <article class="b-news-top-item">
-            <img
-              class="b-news-top-item__img"
-              src="/src/assets/images/image-retro-pcs.webp"
-              alt=""
-              width="200"
-              height="254"
-            />
-            <h4 class="b-news-top-item__headline">Reviving Retro PCs</h4>
-            <p class="b-news-top-item__announce">
-              What happens when old PCs are given modern upgrades?
-            </p>
-          </article>
-        </li>
-
-        <li>
-          <article class="b-news-top-item">
-            <img
-              class="b-news-top-item__img"
-              src="/src/assets/images/image-top-laptops.webp"
-              alt=""
-              width="200"
-              height="254"
-            />
-            <h4 class="b-news-top-item__headline">Top 10 Laptops of 2022</h4>
-            <p class="b-news-top-item__announce">
-              Our best picks for various needs and budgets.
-            </p>
-          </article>
-        </li>
-
-        <li>
-          <article class="b-news-top-item">
-            <img
-              class="b-news-top-item__img"
-              src="/src/assets/images/image-gaming-growth.webp"
-              alt=""
-              width="200"
-              height="254"
-            />
-            <h4 class="b-news-top-item__headline">The Growth of Gaming</h4>
-            <p class="b-news-top-item__announce">
-              How the pandemic has sparked fresh opportunities.
-            </p>
-          </article>
-        </li>
-      </ol>
-    </aside>
 
     <dialog aria-label="Menu" id="menu" class="b-menu">
       <header>

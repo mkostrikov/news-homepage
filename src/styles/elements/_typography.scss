@@ -1,5 +1,14 @@
 @use "../tools/" as t;
 
+h1 {
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 h2 {
   font-size: clamp(
     t.rem(40),

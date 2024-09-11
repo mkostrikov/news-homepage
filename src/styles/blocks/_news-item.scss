@@ -11,7 +11,6 @@
     "..."
     "link";
   grid-template-rows: auto 24px auto 16px auto 24px auto;
-  align-items: start;
   text-wrap: balance;
 
   &__picture {
@@ -59,13 +58,16 @@
     }
   }
 
-  @include t.breakpoint(m) {
-    grid-template-areas:
-      "picture picture"
-      "headline announce"
-      "headline link";
-    grid-template-columns: repeat(2, 350px);
-    grid-template-rows: repeat(3, auto);
-    gap: 30px;
+  @include t.breakpoint(s) {
+    & {
+      grid-template-areas:
+        "picture picture"
+        "headline announce"
+        "headline link";
+      grid-template-columns: repeat(2, minmax(350px, 1fr));
+      grid-template-rows: repeat(3, auto);
+      justify-content: space-between;
+      gap: 30px;
+    }
   }
 }
